@@ -16,7 +16,7 @@ do
         echo "Tails"
         (( tails_count++ ))
     fi
-    if(( heads_count == target_count || tails_count == target_count ))
+    if(( heads_count == target_count &&  heads_count - tails_count  >= 2 || tails_count == target_count && tails_count - heads_count >=2  ))
     then
         break
     fi 

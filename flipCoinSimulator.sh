@@ -24,10 +24,10 @@ done
 echo "The Heads count is $heads_count and Tails Count is $tails_count"
 if(( heads_count > tails_count ))
 then
-    echo "Winner is Heads"
+    echo "Heads won by $(( heads_count - tails_count ))"
 elif(( tails_count > heads_count ))
 then
-    echo "Winner is Tails"
+    echo "Tails won by $(( tails_count - heads_count ))"
 else    
     echo "Its tie"
 fi
